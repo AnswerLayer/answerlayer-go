@@ -4,6 +4,12 @@ A small, dependency-free Go client for the [AnswerLayer](https://www.answerlayer
 
 This is the starting point for the official AnswerLayer Go SDK. Today it covers the inquiry endpoints end to end; the surface will grow over time.
 
+## Status
+
+This package is ready for early Inquiry API integrations: it supports session management, one-shot asks, streaming asks, references, SQL events, usage metadata, custom transports, and multi-tenant subject headers.
+
+The SDK is currently `v0.x`. Until `v1.0.0`, expect the package to stay focused on Inquiry while the broader AnswerLayer API surface and compatibility guarantees mature.
+
 ```go
 client := answerlayer.NewClient(os.Getenv("ANSWERLAYER_API_KEY"))
 
